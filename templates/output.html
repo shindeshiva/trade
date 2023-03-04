@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effects of covid on trade</title>
+</head>
+<body>
+ 
+    <h1>Trading Data</h1>
+  
+  {% for row in rows %}
+    <p>covid: 
+       <b>{{row["date"]}}</b> | 
+       {{row["Country"]}} | 
+        {{ row["Direction"]}} | 
+       {{row['Weekday']}}	| 
+       {{row["Year"]}} |
+        {{ row["Value"]}} |
+       {{row['Transport']}}	
+    </p>
+    {% endfor %}
+     
+</body>
+</html>
